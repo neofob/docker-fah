@@ -1,0 +1,19 @@
+version: '3'
+services:
+  fah:
+    build: ./build/Dockerfile
+    image: neofob/fah:${TAG:-latest}
+    ports:
+      - 7396:7396
+    volumes:
+      - ${CONFIG_FILE:-./build/config.xml}:/etc/fahclient/config.xml
+      - fahclient:/var/lib/fahclient
+    network_mode: bridge
+    container_name: FAH
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+
+volumes:
+  fahclient:

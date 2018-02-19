@@ -1,0 +1,20 @@
+<config>
+  <!-- Client Control -->
+  <fold-anon v='true'/>
+
+  <!-- Folding Slot Configuration -->
+  <gpu v='false'/>
+
+  <!-- Slot Control -->
+  <power v='full'/>
+
+  <!-- User Information -->
+  <user v='neofob'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'>
+		<client-type v='beta'/>
+	</slot>
+</config>
+
+<!-- vim: set sw=2 ts=2: -->
