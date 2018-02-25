@@ -1,0 +1,25 @@
+<config>
+  <!-- Client Control -->
+  <fold-anon v='true'/>
+
+  <!-- Folding Slot Configuration -->
+  <cause v='ALZHEIMERS'/>
+
+  <!-- Slot Control -->
+  <power v='FULL'/>
+
+  <!-- User Information -->
+  <user v='neofob'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'>
+    <client-type v='beta'/>
+    <power v='full'/>
+  </slot>
+  <slot id='1' type='GPU'>
+    <client-type v='beta'/>
+    <gpu-index v='0'/>
+    <opencl-index v='0'/>
+    <power v='full'/>
+  </slot>
+</config>
