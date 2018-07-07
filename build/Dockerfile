@@ -5,7 +5,7 @@ LABEL maintainer "tuan t. pham" <tuan@vt.edu>
 ENV	PKGS="wget python bzip2" \
 	DEBIAN_FRONTEND=noninteractive \
 	PYTHON_SUPPORT_URL=http://launchpadlibrarian.net/109052632/python-support_1.0.15_all.deb \
-	FAHCLIENT_URL=http://folding.stanford.edu/releases/beta/release/fahclient/debian-stable-64bit/v7.4/fahclient_7.4.16_amd64.deb
+	FAHCLIENT_URL=https://download.foldingathome.org/releases/beta/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb
 
 RUN	apt-get -yq update && apt-get dist-upgrade -yq && \
 	apt-get -yq install ${PKGS} && \
@@ -21,6 +21,7 @@ RUN	apt-get -yq update && apt-get dist-upgrade -yq && \
 COPY	./config.xml /etc/fahclient/config.xml
 WORKDIR /var/lib/fahclient
 
+EXPOSE 7396 36330
 CMD	["/usr/bin/FAHClient", \
 	"--config", "/etc/fahclient/config.xml", \
 	"--run-as", "fahclient", \

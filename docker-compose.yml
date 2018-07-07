@@ -1,7 +1,7 @@
 version: '3'
 services:
   fah:
-    build: ./build/Dockerfile
+    build: build
     image: neofob/fah:${TAG:-latest}
     ports:
       - 7396:7396
