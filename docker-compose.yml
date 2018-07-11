@@ -1,5 +1,5 @@
 ---
-version: '3'
+version: '2.2'
 services:
   fah:
     build: build
@@ -13,10 +13,8 @@ services:
     ports:
       - 7396:7396
       - 36330:36330
-    deploy:
-      resources:
-        limits:
-          memory: 1G
+    cpus: 4
+    mem_limit: 256M
     logging:
       options:
         max-size: "640k"
