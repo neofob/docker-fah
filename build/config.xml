@@ -15,6 +15,9 @@
   <slot id='0' type='CPU'>
 		<client-type v='beta'/>
 	</slot>
+
+	<allow>127.0.0.1 172.17.0.1</allow>
+	<web-allow>127.0.0.1 172.17.0.1</web-allow>
 </config>
 
 <!-- vim: set sw=2 ts=2: -->
