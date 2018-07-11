@@ -16,6 +16,9 @@ To pause the container
 make pause
 ```
 
+To view the current folding progress, open your browser
+at [http://client.foldingathome.org/](http://client.foldingathome.org/)
+
 Note
 ====
 When use `make down` or `docker-compose down` the volume
