@@ -10,6 +10,7 @@ services:
     network_mode: bridge
     container_name: FAH
     hostname: fah
+    restart: always
     ports:
       - 7396:7396
       - 36330:36330
