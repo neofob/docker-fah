@@ -16,6 +16,14 @@ services:
       - 36330:36330
     cpus: 4
     mem_limit: 256M
+    environment:
+      FAH_USER: neofob
+      FAH_PASSKEY: ""
+      FAH_TEAM: "0"
+      FAH_CLIENT_TYPE: "beta"
+      # Use some fancy script
+      # FAH_HOST_IP=`get_host_ip.sh` docker-compose up -d
+      FAH_HOST_IP: ${FAH_HOST_IP}
     logging:
       options:
         max-size: "640k"

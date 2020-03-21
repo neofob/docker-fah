@@ -1,0 +1,25 @@
+<!-- vim: set sw=2 ts=2: -->
+
+<config>
+  <!-- Client Control -->
+  <fold-anon v='true'/>
+
+  <!-- Folding Slot Configuration -->
+  <gpu v='false'/>
+
+  <!-- Slot Control -->
+  <power v='full'/>
+
+  <!-- User Information -->
+  <user v='{{ .Env.FAH_USER }}'/>
+  <passkey v='{{ .Env.FAH_PASSKEY }}'/>
+	<team v='{{ .Env.FAH_TEAM }}'/>
+
+  <!-- Folding Slots -->
+  <slot id='0' type='CPU'>
+		<client-type v='{{ .Env.FAH_CLIENT_TYPE }}'/>
+	</slot>
+
+	<allow>127.0.0.1 {{ .Env.FAH_HOST_IP }}</allow>
+	<web-allow>127.0.0.1 {{ .Env.FAH_HOST_IP }}</web-allow>
+</config>
