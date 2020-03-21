@@ -5,6 +5,16 @@ Yet another Docker container to run Folding at Home
 * `config.xml.tmpl`: this template is used to generate `config.xml`
 * Requirement: `docker-compose`
 
+Build docker image locally
+==========================
+```
+# Default DOCKER_NAME=neofob/fah DOCKER_TAG=latest
+make docker
+
+# Build test image
+make DOCKER_TAG=test docker
+```
+
 Run, pause, down..
 ==================
 To spin up the `fah` docker service
