@@ -37,7 +37,7 @@ Environment variables
 | `FAH_PASSKEY`    | FAH passkey |
 | `FAH_TEAM`    | FAH team id |
 | `FAH_CLIENT_TYPE` | `beta`, `advanced`, `bigadv` |
-| `FAH_HOST_IP` | `beta`, `advanced`, `bigadv` |
+| `FAH_HOST_IP` | Host IP address |
 
 Exposed Ports
 =============
