@@ -26,6 +26,8 @@ RUN	apt-get -yq update && apt-get dist-upgrade -yq && \
 COPY	./config.xml.tmpl /etc/fahclient/config.xml.tmpl
 WORKDIR /var/lib/fahclient
 
+USER	fahclient
+
 EXPOSE 7396 36330
 
 CMD	["dockerize", \
