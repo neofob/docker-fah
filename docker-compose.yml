@@ -5,7 +5,6 @@ services:
     build: build
     image: neofob/fah:${TAG:-latest}
     volumes:
-      - ${CONFIG_FILE:-./build/config.xml}:/etc/fahclient/config.xml
       - fahclient:/var/lib/fahclient
     network_mode: bridge
     container_name: FAH
@@ -13,9 +12,8 @@ services:
     restart: always
     ports:
       - 7396:7396
-      - 36330:36330
     cpus: 4
-    mem_limit: 256M
+    mem_limit: 1G
     environment:
       FAH_USER: neofob
       FAH_PASSKEY: ""
