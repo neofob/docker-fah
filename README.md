@@ -1,6 +1,6 @@
 Yet another Docker container to run Folding at Home
 ===================================================
-* Base image: `ubuntu:16.04`
+* Base image: `ubuntu:20.04`
 * Folding at home: `beta` version
 * `config.xml.tmpl`: this template is used to generate `config.xml`
 * Requirement: `docker-compose`
@@ -53,6 +53,8 @@ prune`, the current work of Folding @Home in that volume will be removed as a re
 TODO
 ====
 * Make Ansible playbook to deploy container to run all nodes in a docker swarm :=)
-* Add GPU support `{NVIDIA, AMD}`
+* Add GPU support `{NVIDIA, AMD}`; see the official [containers][0]
 
 __author__: *tuan t. pham*
+
+[0]: https://github.com/FoldingAtHome/containers
